@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.header--right {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -40px;
+}
+
+.videoList {
+  margin: 20px 20px;
+}
+
+.oneVideos {
+  margin: 10px 0;
+}
+
+.videoGroup {
+  display: flex;
+}
+
+.videGroup2 {
+  display: flex;
+}
+
+.imgBox2 > img {
+  width: 200px;
+}
+
+.showVideo {
+  position: absolute;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  overflow: scroll;
+  background-color: rgb(229, 237, 237);
+}
+.videoDesciption {
+  padding: 0 20px;
+  /* position: relative; */
+}
+
+.videoDesciption2 {
+  font-size: 12px;
+}
+
+.videoTime {
+  text-align: right;
+}
+
+.channeldeiscription {
+  /* position: absolute; */
+  padding-top: 40px;
+}
+
+/* left menu uchun */
+.leftmenu {
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  padding: 20px 30px;
+  left: 0;
+}
+
+.flex--icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.flex--icon .lefticons {
+  font-size: 40px;
+  padding-left: 15px;
+}
+
+.icons--text {
+  margin-top: 0;
 }

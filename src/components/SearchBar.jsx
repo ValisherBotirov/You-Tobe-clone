@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -26,12 +25,11 @@ class SearchBar extends React.Component {
           style={{
             display: "flex",
             justifyContent: "center",
-            marginTop: "30px",
           }}
         >
           <div
             className="ui icon input"
-            style={{ width: "100%" }}
+            style={{ width: "80%" }}
             onChange={this.onChangeInput}
           >
             <input
@@ -43,7 +41,6 @@ class SearchBar extends React.Component {
           </div>
           <div className="results"></div>
         </form>
-        <h2>{this.state.keyword}</h2>
       </div>
     );
   }

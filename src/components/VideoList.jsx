@@ -1,4 +1,6 @@
 import React from "react";
+import VideoDetails from "./VideoDetail";
+import "../index.css";
 
 class VideoList extends React.Component {
   constructor(props) {
@@ -7,17 +9,22 @@ class VideoList extends React.Component {
   }
 
   renderList = () => {
+    // console.log(this.props.data);
     return this.props.data.data?.items.map((val) => {
       return (
-        <div key={val.id.videoId}>
-          <img src={val.snippet.thumbnails.high.url} />
+        <div className="oneVideos">
+          <VideoDetails
+            val={val}
+            videoIdFunc={this.props.videoIdFunc}
+            id={this.props.id}
+          />
         </div>
       );
     });
   };
 
   render() {
-    return <div>{this.renderList()}</div>;
+    return <div className="videoList">{this.renderList()}</div>;
   }
 }
 
